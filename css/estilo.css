@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #FFE12A;
+    color: #313638;
+    padding: 10px 20px;
+    display: flex; /* Usando flexbox para alinhar itens */
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha verticalmente ao centro */
+    text-align: center;
+}
+
+.aviao-logo{
+    width: 200px;
+}
+
+.navegacao{
+    display: flex; /* Usando flexbox para alinhar itens */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #313638;
+}
+
+.navegacao a {
+    color: #FFE12A;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    padding: 20px;
+}
+
+.main-content article{
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+}
+
+.main-content img{
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.info-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.info-footer a{
+    color: #FFE12A;
+    padding: 10px 20px;
+}
+
+@media (max-width: 399px){
+    .navegacao a {
+        color: #FFE12A;
+        text-decoration: none;
+        padding: 10px 20px;
+        width: 25%;
+        text-align: center;
+    }
+    
+    .aviao-logo{
+        width: 150px;
+    }
+}
+
+@media (min-width: 1205px){
+    .main-content article{
+        width: 25%;
+    }
+}
